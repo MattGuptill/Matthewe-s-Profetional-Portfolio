@@ -29,11 +29,22 @@ h4 {
     font-size: 1.3rem;
 }
 
-/* Header */
-
+/* Sections */
 header {
     display: block;
 }
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: #4e615b;
+    height: 5rem;
+    color: #ece6da;
+    align-items: center;
+}
+
+/* Header */
 
 /* NavBar */
 nav {
@@ -173,23 +184,12 @@ a, .nav_links li{
 }
 
 /* footer */
-footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    background-color: #4e615b;
-    height: 5rem;
-    color: #ece6da;
-    align-items: center;
-    
-}
 
 .footer_links {
     list-style: none;
     text-align: center;
     margin: 0;
     margin-bottom: 10px;
-
 }
 
 .footer_links li {
@@ -206,3 +206,36 @@ footer {
     color:#ece6da;
     transition: all 0s linear;
 }
+
+/* contact */
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 620px;
+    align-items: center;
+   
+}
+
+.contact h1 {
+    justify-self: center;
+}
+
+.contact_con {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
+    width: 75%;
+}
+
+.contact_con img {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 10px;
+}
+
+.contact_info h4 {
+    margin-bottom: 1rem;
+}
+
