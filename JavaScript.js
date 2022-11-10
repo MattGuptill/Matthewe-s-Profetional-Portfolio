@@ -1,21 +1,19 @@
-// annimations
-// defining the link in variables
+
 
 //the home button on navbar
  const homeLink = document.getElementById('homeLink');
 
- //the contact link on navbar
+//  //the contact link on navbar
  const contactLink = document.getElementById('contactLink');
 
-//the anchor home tag
+// //the anchor home tag
  const home = document.querySelector('.link_color_1');
 
- //the achor contact tag
+//  //the achor contact tag
  const contact = document.querySelector('.link_color_2')
+ 
 
-
-
-
+ 
  //function to change the bacground color and text color of the home link
  const homeHover = () => {
 
@@ -34,9 +32,9 @@ function changeBackgroundColor() {
  
  };
 
- homeHover()
 
- //function to change the background color and text color of the contact link
+
+//  //function to change the background color and text color of the contact link
  const contactHover = () =>{
 
     function changeBackgroundColor() {
@@ -51,10 +49,8 @@ function changeBackgroundColor() {
     
      contactLink.addEventListener('mouseover', changeBackgroundColor)
      contactLink.addEventListener('mouseout', revertBackgroundColor) 
- }
- 
- contactHover()
-
- 
+ };
 
 
+homeHover() 
+contactHover()

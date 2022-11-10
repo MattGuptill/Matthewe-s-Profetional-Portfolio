@@ -10,7 +10,7 @@ html {
 
 body {
     display: block;
-    background-color: #ece6da;
+    background-color: #caceb5;
 }
 
 /* typogrophy */
@@ -20,12 +20,13 @@ h1 {
 
 h2 {
     font-size: 2rem;
+    margin: 2rem 0;
 }
 h3 {
     font-size: 1.5rem;
 }
 h4 {
-    font-size: 1rem;
+    font-size: 1.3rem;
 }
 
 /* Header */
@@ -114,9 +115,9 @@ a, .nav_links li{
 
 .main_article {
     display: flex;
-    height: 700px;
+    height: 1000px;
     margin: 0;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     color:#2f3543;
@@ -136,7 +137,10 @@ a, .nav_links li{
     border-radius: 10px;
     border: 2px solid #2f3543;
     gap: 1.5rem;
-    margin: 1rem 0;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+
 }
 
 .project img {
@@ -147,5 +151,58 @@ a, .nav_links li{
 .code_used {
     list-style: none;
     text-align: center;
+}
+
+.pro_dis {
+    text-align: center;
+    line-height: 2rem;
+    width: 50%;
     
+}
+
+.project:hover {
+    background-color: #ece6da;
+    color: #2f3543;
+    transition: all 600ms ease;
+}
+
+.project:active {
+    background-color: #2f3543;
+    color:#ece6da;
+   transition: all 0s linear;
+}
+
+/* footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: #4e615b;
+    height: 5rem;
+    color: #ece6da;
+    align-items: center;
+    
+}
+
+.footer_links {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 10px;
+
+}
+
+.footer_links li {
+    display: inline;
+    position: relative;
+    bottom: 1rem;
+}
+
+.footer_link:hover {
+    color:#1c1f2e;
+} 
+
+.footer_link:active {
+    color:#ece6da;
+    transition: all 0s linear;
 }
