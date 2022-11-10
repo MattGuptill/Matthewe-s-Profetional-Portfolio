@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: block;
+    background-color: #ece6da;
+}
+
+/* typogrophy */
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+h3 {
+    font-size: 1.5rem;
+}
+h4 {
+    font-size: 1rem;
+}
+
+/* Header */
+
+header {
+    display: block;
+}
+
+/* NavBar */
+nav {
+    display: flex;
+    background-color: #4e615b ;
+    margin: 0;
+    z-index: 999;
+    height: 4rem;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.nav_logo {
+    margin: 0 2rem;
+    font-weight: 500;
+    font-size: 3rem;
+    text-decoration: none;
+}
+
+.nav_links {
+    display: flex;
+    list-style: none;
+    margin: 0 2rem;
+    gap: 3rem;
+    font-size: 2rem;
+}
+
+a, .nav_links li{
+    text-decoration: none;
+    padding: 5px ;
+    border-radius: 10px;
+    color: #ece6da;
+    transition: all 600ms ease;
+}
+
+/* Banner */
+.ban_con {
+    display: flex;
+    background-image: url(./Resorces/Photos/pexels-rudolf-jakkel-418831.jpg);
+    height: 600px;
+    margin: 0;
+    justify-content: space-around;
+    align-items: center;
+    background-size: cover;
+    position: relative;
+    top: 4rem;
+}
+
+.ban_con img {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 180px;   
+}
+
+.ban_dis {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 15rem;
+    width: 30rem;
+    margin: 0;
+    background-color: #2f3543;
+    color:#ece6da;
+    padding: 1rem 3rem;
+    line-height: 1.5rem;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.ban_dis p {
+    font-size: large;
+}
+
+/* main */
+
+/* Past Projects */
+
+.main_article {
+    display: flex;
+    height: 700px;
+    margin: 0;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    color:#2f3543;
+}
+
+.pro_con {
+    width: 85%;
+}
+
+.project {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #ece6da;
+    background-color: #4e615b;
+    padding: 1.5rem 2rem;
+    border-radius: 10px;
+    border: 2px solid #2f3543;
+    gap: 1.5rem;
+    margin: 1rem 0;
+}
+
+.project img {
+    width: 10rem;
+    height: 8rem;
+}
+
+.code_used {
+    list-style: none;
+    text-align: center;
+    
+}
