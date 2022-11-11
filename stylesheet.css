@@ -11,6 +11,8 @@ html {
 body {
     display: block;
     background-color: #caceb5;
+    position: relative;
+    min-height: 100vh;
 }
 
 /* typogrophy */
@@ -20,7 +22,7 @@ h1 {
 
 h2 {
     font-size: 2rem;
-    margin: 2rem 0;
+    
 }
 h3 {
     font-size: 1.5rem;
@@ -42,6 +44,10 @@ footer {
     height: 5rem;
     color: #ece6da;
     align-items: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%
 }
 
 /* Header */
@@ -72,6 +78,7 @@ nav {
     margin: 0 2rem;
     gap: 3rem;
     font-size: 2rem;
+    padding: 0;
 }
 
 a, .nav_links li{
@@ -93,6 +100,7 @@ a, .nav_links li{
     background-size: cover;
     position: relative;
     top: 4rem;
+    z-index: 10;
 }
 
 .ban_con img {
@@ -132,6 +140,10 @@ a, .nav_links li{
     align-items: center;
     flex-direction: column;
     color:#2f3543;
+    z-index: 5;
+    overflow: hidden;
+    padding-bottom: 80px;
+    margin-top: 2.5rem;
 }
 
 .pro_con {
@@ -162,6 +174,7 @@ a, .nav_links li{
 .code_used {
     list-style: none;
     text-align: center;
+    padding: 0;
 }
 
 .pro_dis {
@@ -212,9 +225,9 @@ a, .nav_links li{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 620px;
+    height: 750px;
     align-items: center;
-   
+    padding-bottom: 80px;
 }
 
 .contact h1 {
@@ -237,5 +250,121 @@ a, .nav_links li{
 
 .contact_info h4 {
     margin-bottom: 1rem;
+}
+
+
+/* screen changes */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    body {
+        display:block;
+    }
+    /* navbar */
+    nav {
+        flex-direction: column;
+        height: 185px;
+        align-items: center;
+        gap: 1rem;
+        position: relative;
+    }
+
+    .nav_logo {
+        font-size: 2.75rem;
+        margin-top: 1rem;
+    }
+
+    .nav_links {
+        font-size: 2rem;
+        align-self:center;
+        justify-content: space-around;
+        
+    }
+
+   .nav_links li {
+        display: flex;
+        border: 2.5px solid #2f3543;
+        margin-bottom: 1rem;
+        width: 195px;
+        justify-content: center;
+        background-color: #2f3543;
+   }
+
+
+    /* banner */
+   
+    .ban_con {
+    top: 0px;
+    flex-direction: column;
+    height: 800px;
+    justify-content: center;
+    gap: 4rem;
+    z-index: 10;
+   }
+
+   .ban_con img {
+    width: 15rem;
+    height: 15rem;
+   }
+
+   .ban_dis {
+    width: 300px;
+    height: 350px;
+    line-height: normal;
+    padding: 1rem 2rem;
+   }
+
+   /* main */
+   .main_article {
+    top: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 1900px;
+    margin-top: 1rem;
+   }
+
+   .pro_con {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+   }
+
+   .project {
+    height: 500px;
+    width: 350px;
+    flex-direction: column;
+    
+   }
+
+   .code_used {
+    margin: 0
+   }
+
+   .pro_dis {
+    width: 300px
+   }
+
+   /* footer */
+   footer { 
+   
+   }
+
+   .footer_links {
+    padding: 0;
+   }
+
+
+   /* coontact */
+   .contact {
+    justify-content: flex-start;
+    margin-top: 1.5rem;
+    height: 300;
+   }
+   .contact_con {
+    flex-direction: column;
+    gap: 5rem;
+    margin: 3rem;
+   }
 }
 
