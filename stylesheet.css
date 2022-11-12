@@ -368,3 +368,10 @@ a, .nav_links li{
    }
 }
 
+/* This CSS makes the JS unnecessarily */
+/* #homeLink:hover, #contactLink:hover {
+    background-color: #ece6da;
+}
+#homeLink:hover .link_color_1, #contactLink:hover .link_color_2 {
+    color: #1c1f2e;
+} */
